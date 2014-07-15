@@ -17,7 +17,7 @@ var stringifyJSON = function(obj) {
           return obj;
 
       case "object": 
-          if (obj == null) { // if null, return null
+          if (obj === null) { // if null, return null
 
             return 'null';
 
@@ -46,7 +46,7 @@ var stringifyJSON = function(obj) {
               }
             };
             return "{"+ newObj +"}";
-            
+
           }
   }
 };
